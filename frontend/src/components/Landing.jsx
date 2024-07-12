@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-
+import logo from '../192.jpg';
 const Landing = () => {
     const [email, setEmail] = useState('');
     const [result, setResult] = useState('');
@@ -20,10 +20,13 @@ const Landing = () => {
 
     return (
         <div className='h-screen flex justify-center items-center '>
-            <div className="flex items-center justify-between font-mono bg-white rounded-xl shadow-2xl shadow-white   h-1/2">
+            <div className="flex items-center justify-between font-mono bg-white rounded-xl shadow-2xl shadow-white ">
                 <div className="p-8 rounded-lg">
                     <div className='flex grid-cols-2 justify-center items-center'>
                         {/* <h2 className="text-4xl font-semibold mb-6 font-serif text-green-400 w-1/6">S</h2> */}
+                        <div className='p-4'>
+                        <img src={logo} className='p-10 rounded-full' width={200}></img>
+                        </div>
                         <h2 className="text-4xl font-semibold mb-6 font-serif text-green-400">
                             <span style={{ color: 'red' }}>S</span>pam Mail Detector</h2>
                     </div>
